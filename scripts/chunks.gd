@@ -8,8 +8,8 @@ var regions = []
 
 const tiles = {
 	"dirt": Vector2i(0, 0),
-	"robot": Vector2i(1, 0),
-	"grass": Vector2i(2, 0),
+	"grass": Vector2i(1, 0),
+	"coal": Vector2i(2, 0),
 	"copper": Vector2i(3, 0),
 	"iron": Vector2i(4, 0),
 	"stone": Vector2i(5, 0)

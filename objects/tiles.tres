@@ -34,4 +34,4 @@ texture = ExtResource("1_k75gu")
 
 [resource]
 physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_bmcal")
+sources/0 = SubResource("TileSetAtlasSource_bmcal")

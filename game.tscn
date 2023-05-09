@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://csp1fl8ypm1e"]
+
+[ext_resource type="Script" path="res://scripts/chunks.gd" id="1_brva3"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="2_1on2f"]
+[ext_resource type="Texture2D" uid="uid://do4jjfdosn813" path="res://assets/drillbot.png" id="3_0bw70"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f66x7"]
+size = Vector2(16, 16)
+
+[node name="Root" type="Node2D"]
+
+[node name="Chunks" type="Node2D" parent="."]
+scale = Vector2(1.00447, 1)
+script = ExtResource("1_brva3")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(8, -8)
+script = ExtResource("2_1on2f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_f66x7")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -2)
+zoom = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("3_0bw70")
